@@ -10,7 +10,7 @@
       <button>Short!</button>
     </form>
   </div>
-  <div class="responses">
+  <div class="responses" v-if="linksRes.length > 0">
     <div v-for="link in linksRes" :key="link">
       <div class="response linkname">{{ link.link }}</div>
       <span :to="'/' + link.id" class="response">
@@ -48,7 +48,6 @@ export default defineComponent({
           id: '',
         })
         .then((res) => {
-          console.log(res)
           this.linksRes.push({
             link: res.data.link,
             id: res.data.id,
