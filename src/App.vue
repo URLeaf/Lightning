@@ -22,6 +22,7 @@ export default defineComponent({
 
 body {
   background: #161616;
-  color: #e3e3e3;
+  color: #161616;
+  margin: 0;
 }
 </style>

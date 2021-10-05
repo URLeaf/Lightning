@@ -1,6 +1,9 @@
 <template>
-  <div class="logo">Lightning</div>
-  <div class="desc">Ultra-fast link shorter</div>
+  <div class="logo">
+    Lightning
+    <img src="../assets/lightning.svg" />
+  </div>
+  <!-- <div class="desc">Ultra-fast link shorter</div> -->
 </template>
 
 <script lang="ts">
@@ -9,16 +12,25 @@ import { defineComponent } from 'vue'
 export default defineComponent({})
 </script>
 
-<style>
+<style scoped>
 .logo {
-  font-size: 75px;
-  text-align: center;
-  margin: 10px;
+  font-size: calc(45px + 2vw);
+  font-weight: 600;
+  font-style: italic;
+  color: #00647d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.logo img {
+  display: inline-block;
+  width: calc(45px + 2vw);
 }
 
 .desc {
   text-align: center;
-  color: #e3e3e3;
-  font-size:25px;
+  font-size: 25px;
 }
 </style>

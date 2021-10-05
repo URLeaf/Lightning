@@ -6,10 +6,11 @@
 div {
   width: 100vw;
   height: 100vh;
-  background-color: #161616;
+  background-color: #e3e3e3;
   background-image: url('../assets/background.png');
-  background-repeat:no-repeat;
-  background-position-y:bottom;
+  background-repeat: no-repeat;
+  background-size: 25%;
+  background-position-y: bottom;
   background-position-x: right;
   position: fixed;
   z-index: -1;

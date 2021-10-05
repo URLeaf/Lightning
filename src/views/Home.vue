@@ -14,5 +14,8 @@ export default defineComponent({
     Header,
     Input,
   },
+  mounted() {
+    document.title = 'Lightning'
+  },
 })
 </script>
